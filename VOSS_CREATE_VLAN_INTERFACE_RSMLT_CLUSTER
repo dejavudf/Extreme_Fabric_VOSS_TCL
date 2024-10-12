@@ -71,18 +71,18 @@ CLI ip rsmlt
 CLI ip rsmlt holdup-timer 9999
 CLI ip dhcp-relay
 CLI exit
-CLI ip dhcp-relay fwd-path $IP_SPINE01 172.20.65.1
-CLI ip dhcp-relay fwd-path $IP_SPINE01 172.20.65.1  enable
-CLI ip dhcp-relay fwd-path $IP_SPINE01 172.20.65.1  mode bootp_dhcp
+CLI ip dhcp-relay fwd-path $IP_SPINE01 10.1.1.1
+CLI ip dhcp-relay fwd-path $IP_SPINE01 10.1.1.1  enable
+CLI ip dhcp-relay fwd-path $IP_SPINE01 10.1.1.1  mode bootp_dhcp
 }
 } elseif { $deviceIP eq "$IP_MGMT_SPINE02" } {
 CLI ip address $IP_SPINE02 $IP_MASK
 if { $DHCP_RELAY eq "Sim" } {
 CLI ip dhcp-relay
 CLI exit
-CLI ip dhcp-relay fwd-path $IP_SPINE02 172.20.65.1
-CLI ip dhcp-relay fwd-path $IP_SPINE02 172.20.65.1  enable
-CLI ip dhcp-relay fwd-path $IP_SPINE02 172.20.65.1  mode bootp_dhcp
+CLI ip dhcp-relay fwd-path $IP_SPINE02 10.1.1.1
+CLI ip dhcp-relay fwd-path $IP_SPINE02 10.1.1.1  enable
+CLI ip dhcp-relay fwd-path $IP_SPINE02 10.1.1.1 mode bootp_dhcp
 }
 }
 
