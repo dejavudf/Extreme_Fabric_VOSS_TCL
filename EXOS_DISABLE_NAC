@@ -24,7 +24,7 @@ set var ID_PORT_FIRST
 set var ID_PORT_LAST 
 #@VariableFieldLabel (description ="Selecione a Role default a ser configurada na(s) porta(s):", scope = global,
 #   required    = yes,
-#   validValues = [POLICY_DEV_NAC,POLICY_ACCESS_POINT_NAC,POLICY_CFTV_DEBRA_NAC,POLICY_IMPRESSORAS_NAC,POLICY_CFTV_SEDE_NAC,POLICY_MIDIA_FNDE_NAC,POLICY_CAI_DEBRA_NAC,POLICY_USUARIOS_AVANCADOS_NAC,POLICY_CAI_SEDE_NAC,POLICY_MGMT_SWITCHES_NAC,POLICY_INFRA_NAC,POLICY_USUARIOS_SEDE_NAC,POLICY_VOIP_DEBRA_NAC,POLICY_TELEFONIA_SEDE_NAC])
+#   validValues = [POLICY_XPTO,POLICY_XPTO1,POLICY_XPTON])
 set var ID_ROLE_DEFAULT
 #@SectionEnd
 #@SectionStart (description = "Switch(es) selecionado(s):")
